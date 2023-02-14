@@ -1,4 +1,4 @@
-## Homework Template for Maths @ Colgate
+## LaTeX Homework Template @ Colgate
 
 This is the LaTeX template I have used for all my mathematics assignments. 
 Deliberately kept simple. The header looks like:
