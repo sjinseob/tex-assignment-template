@@ -4,8 +4,13 @@ This is the LaTeX template I have used for all my mathematics assignments.
 Deliberately kept simple. The header looks like:
 
 ```
-MATH 000                  Jinseob Sohn
+COSC 000                  Jinseob Sohn
 Fall 20XX                Assignment XX
 ______________________________________
 ```
-Declared environment ```question``` where one could input answers to questions. Whenever 
+Declared environment ```question``` where one could input answers to questions. Each time you declare the ```question``` environment, the question number will increment by 1. So,
+```
+1.  % \begin{question} ... \end{question}
+2.  % \begin{question} ... \end{question} 
+...and so forth.
+```
