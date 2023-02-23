@@ -14,6 +14,7 @@
 
 \usepackage{graphicx}
 \usepackage{wrapfig}
+\usepackage{lipsum}
 \graphicspath{{./images/}}
 
 
@@ -25,7 +26,10 @@
 \setlength\parindent{24pt}
 \newcommand{\indset}{\mathcal{I}}
 \newcommand{\contradiction}{\rightarrow\!\leftarrow}
-\newenvironment{proof}{\textit{Proof.}\;}{\hfill$\blacksquare$}
+\newcommand{\qed}{\scalebox{0.75}{\(\blacksquare\)}}
+
+\newenvironment{proof}{\noindent\textit{Proof.}\!\ }{\hfill\qed}
+
 % \def\pskip{\vspace{4pt plus 1pt minus 1pt}}
 % \def\subqskip{\vspace{7pt plus 2pt minus 2pt}}
 % \def\pfskip{\vspace{7pt plus 2pt minus 2pt}}
@@ -33,13 +37,12 @@
 
 \newcounter{qcounter}
 \setcounter{qcounter}{1}
-\newenvironment{question}{\theqcounter.\,}{\stepcounter{qcounter}\bigskip}
+\newenvironment{question}{\noindent\theqcounter.\,}{\stepcounter{qcounter}\bigskip}
 
 \begin{document}
-\raggedright
 % ==================== HEADER ====================
-MATH 414: Matroids \hfill Jinseob Sohn \\
-Spring 2023 \hfill Homework 1
+\noindent MATH 414: Matroids \hfill Jinseob Sohn \\
+Spring 2023 \hfill Homework 3
 \rule[8pt]{\textwidth}{0.6pt}
 % ==================== WORKSPACE ====================
 
