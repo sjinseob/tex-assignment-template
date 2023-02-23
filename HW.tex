@@ -2,35 +2,41 @@
 \usepackage[margin=0.75in]{geometry}
 \usepackage{amsmath, amssymb}
 \usepackage{parskip}
+\setlength{\parindent}{0pt}
 
-% Fonts used: STIX 2
+% \usepackage{fourier}
+% \usepackage{mlmodern}
+% \usepackage[bitstream-charter]{mathdesign}
+% \usepackage{libertine}
+% \usepackage{libertinust1math}
 \usepackage{stix2}
 \usepackage[T1]{fontenc}
 
 \usepackage{graphicx}
-%
-%
-% Lorem-Ipsum Generator
-\usepackage{lipsum} 
-%
-% path to images if ever needed
-\graphicspath{{./images/}}  
-%
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\graphicspath{{./images/}}
+
+
 % remove page numbering
 \pagenumbering{gobble} 
-%
+
 % ==================== COMMANDS/DEFINITIONS ==================== 
-\setlength\parindent{24pt}
 \newcommand{\indset}{\mathcal{I}}
-\newcommand{\contradiction}{\rightarrow\!\leftarrow}
+\newcommand{\contradiction}{\(\Rightarrow\hspace{-0.2em}\Leftarrow\)}
 \newcommand{\qed}{\scalebox{0.75}{\(\blacksquare\)}}
-%
-%
-\newenvironment{proof}{\noindent\textit{Proof.}\!\ }{\hfill\qed}
+
+\newenvironment{proof}{\emph{Proof.}\!\ }{\hfill\qed}
+
+% \def\pskip{\vspace{4pt plus 1pt minus 1pt}}
+% \def\subqskip{\vspace{7pt plus 2pt minus 2pt}}
+% \def\pfskip{\vspace{7pt plus 2pt minus 2pt}}
+% \def\qskip{\vspace{17pt plus 3pt minus 3pt}}
+
 \newcounter{qcounter}
 \setcounter{qcounter}{1}
 \newenvironment{question}{\noindent\theqcounter.\,}{\stepcounter{qcounter}\bigskip}
-%
+
 \begin{document}
 % ==================== HEADER ====================
 \noindent MATH 414: Matroids \hfill Jinseob Sohn \\
