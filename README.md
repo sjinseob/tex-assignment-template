@@ -14,3 +14,4 @@ Declared environment ```question``` where one could input answers to questions. 
 2.  % \begin{question} ... \end{question} 
 ...and so forth.
 ```
+Sample file provided in HW1.pdf.
