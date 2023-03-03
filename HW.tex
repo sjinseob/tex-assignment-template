@@ -2,13 +2,9 @@
 \usepackage[margin=0.75in]{geometry}
 \usepackage{amsmath, amssymb}
 \usepackage{parskip}
+\usepackage{ragged2e}
 \setlength{\parindent}{0pt}
 
-% \usepackage{fourier}
-% \usepackage{mlmodern}
-% \usepackage[bitstream-charter]{mathdesign}
-% \usepackage{libertine}
-% \usepackage{libertinust1math}
 \usepackage{stix2}
 \usepackage[T1]{fontenc}
 
@@ -22,16 +18,13 @@
 \pagenumbering{gobble} 
 
 % ==================== COMMANDS/DEFINITIONS ==================== 
-\newcommand{\indset}{\mathcal{I}}
+\newcommand{\indset}{\mathcal{I}}           
+\newcommand{\flats}{\mathcal{F}}
 \newcommand{\contradiction}{\(\Rightarrow\hspace{-0.2em}\Leftarrow\)}
 \newcommand{\qed}{\scalebox{0.75}{\(\blacksquare\)}}
+\newcommand*\clo[1]{\overline{#1}}
 
-\newenvironment{proof}{\emph{Proof.}\!\ }{\hfill\qed}
-
-% \def\pskip{\vspace{4pt plus 1pt minus 1pt}}
-% \def\subqskip{\vspace{7pt plus 2pt minus 2pt}}
-% \def\pfskip{\vspace{7pt plus 2pt minus 2pt}}
-% \def\qskip{\vspace{17pt plus 3pt minus 3pt}}
+\newenvironment{proof}{\emph{Proof.}\!\ }
 
 \newcounter{qcounter}
 \setcounter{qcounter}{1}
@@ -43,5 +36,4 @@
 Spring 2023 \hfill Homework 3
 \rule[8pt]{\textwidth}{0.6pt}
 % ==================== WORKSPACE ====================
-
 \end{document}
