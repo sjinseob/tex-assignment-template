@@ -6,8 +6,11 @@
 \setlength{\parindent}{0pt}
 
 \usepackage{stix2}
+% \usepackage{mlmodern}
 \usepackage[T1]{fontenc}
-
+\usepackage{cancel}
+\usepackage{xcolor}
+\usepackage{soul}   % highlighter
 \usepackage{graphicx}
 \usepackage{wrapfig}
 \usepackage{lipsum}
@@ -22,10 +25,14 @@
 \newcommand{\bases}{\mathcal{B}}       
 \newcommand{\flats}{\mathcal{F}}
 \newcommand{\whirl}{\mathcal{W}}
+\newcommand{\circuits}{\mathcal{C}}
+\newcommand{\field}{\mathbb{F}}
+\newcommand{\qbin}[2]{\begin{bmatrix}{#1}\\{#2}\end{bmatrix}_q}
 \newcommand{\contradiction}{\(\Rightarrow\hspace{-0.2em}\Leftarrow\)}
 \newcommand{\qed}{\scalebox{0.75}{\(\blacksquare\)}}
 \newcommand*\clo[1]{\overline{#1}}
-\renewcommand{\labelitemi}{\scalebox{0.75}{\(\square\)}}
+\newcommand{\mathcolorbox}[2]{\colorbox{#1}{$\displaystyle #2$}}
+\renewcommand{\labelitemi}{\scalebox{0.75}{•}}
 
 \newenvironment{proof}{\emph{Proof.}\!\ }
 
@@ -36,7 +43,7 @@
 \begin{document}
 % ==================== HEADER ====================
 \noindent MATH 414: Matroids \hfill Jinseob Sohn \\
-Spring 2023 \hfill Homework 4
+Spring 2023 \hfill Homework 6
 \rule[8pt]{\textwidth}{0.6pt}
 % ==================== WORKSPACE ====================
 \end{document}
